@@ -1,0 +1,179 @@
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Updated student card background with gradient */
+.student-card {
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.student-card-content {
+  display: flex;
+  padding: 20px;
+}
+
+.student-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.student-details {
+  flex-grow: 1;
+}
+
+.student-details h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.student-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.student-card-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light transparent background */
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Updated form container background with gradient */
+.form-container {
+  background: linear-gradient(135deg, #FDC830 0%, #F37335 100%);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.student-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px); /* Two items per row */
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="file"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.image-preview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-preview img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+.success-message {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.success-message button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
